@@ -9,8 +9,8 @@ Input: nums = [2,2,1]
 Output: 1
 
  */
-var singleNumber = function (nums) {
-  let numberObject = {}
+var singleNumber = function (nums: number[]) {
+  let numberObject: Record<number, number> = {}
   for (let i = 0; i < nums.length; i++) {
     if (!numberObject[nums[i]]) {
       numberObject[nums[i]] = 1
@@ -27,4 +27,4 @@ var singleNumber = function (nums) {
   return numberObject
   
 }
-console.log(singleNumber([4, 1, 2, 1, 2]))
+console.log(singleNumber([4, 1, 2, 1, 2,4,7]))

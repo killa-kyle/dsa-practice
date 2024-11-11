@@ -26,3 +26,5 @@
     traverse(root)
     return result
 };
+
+console.log(inorderTraversal([1,null,2,3])) // [1,3,2]

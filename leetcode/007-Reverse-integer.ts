@@ -21,7 +21,7 @@
 var reverse = function (x) {
   if (x < 0) return  -1 * reverse(-x)
    let solution = (x+"").split("").reverse().join("")
-   solution = (solution > 2 ** 31 - 1 ? 0 : solution)
+   solution = (Number(solution) > 2 ** 31 - 1 ? 0 : solution).toString()
   return solution
 }
 console.log(reverse(250))
