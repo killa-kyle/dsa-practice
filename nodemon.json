@@ -1,0 +1,6 @@
+{
+    "watch": ["leetcode", "data-structures"],
+    "ext": ".ts,.js",
+    "ignore": [],
+    "exec": "ts-node"
+  }

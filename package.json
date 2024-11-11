@@ -4,12 +4,20 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --coverage"
+    "test": "jest --coverage",
+    "leetcode": "node runLeetcode.js", 
+    "build": "tsc",
+    "dev": "ts-node"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jest": "^27.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
   }
 }
