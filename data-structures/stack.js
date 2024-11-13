@@ -7,7 +7,7 @@ class Node {
     this.next = null;
   }
 }
-// // linked list stack
+// linked list stack
 class StackLinkedList {
   constructor(value) {
     this.top = null;
@@ -65,6 +65,11 @@ class StackLinkedList {
     return array;
   }
 }
+const llStack = new StackLinkedList()
+llStack.push('Shogun')
+console.log(llStack.peek())
+llStack.push('Tokyo Vice')
+console.log(llStack.printStack())
 
 // stack implement w arrays
 class Stack {
@@ -95,6 +100,10 @@ class Stack {
     }
     return false;
   }
+
+  length(){
+    return this.array.length
+  }
   printStack() {
     console.log(this.array);
     return this.array;
@@ -102,14 +111,16 @@ class Stack {
 }
 const myStack = new Stack();
 myStack.push("Google");
-myStack.printStack();
+
+console.log(myStack);
 myStack.push("Udemy");
-myStack.printStack();
+console.log(myStack);
+console.log(myStack.length());
 
 myStack.push("Discord");
+console.log(myStack.array);
 
-myStack.printStack();
-myStack.peek();
+// myStack.peek();
 // myStack.pop();
 // myStack.pop();
 // myStack.pop();

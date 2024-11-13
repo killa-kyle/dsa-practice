@@ -11,5 +11,12 @@ const twoSum = (nums, target) => {
         }
         seen[current] = i
     }
+    return []
 }
-console.log(twoSum([2, 4, 11, 7], 9)); // [0, 1]
+
+// O (n) time complexity
+// O (1) space complexity
+// Test cases
+console.log(twoSum([2, 4, 11, 7], 9)); // [0, 3]
+console.log(twoSum([3, 2, 4], 6)); // [1, 2]
+console.log(twoSum([4, 3], 6)); // [0, 1]
